@@ -18,6 +18,16 @@ public:
             return strs[0];
         }
 
+        // string smallestString = strs[0];
+
+        // for(int j = 1; j < strs.size(); j++)
+        // {
+        //     if (strs[j].length() < smallestString.length())
+        //     {
+        //         smallestString = strs[j];
+        //     }
+        // }
+        // std::cout << "smallestString" << smallestString << endl;
         // currentTestMatch.push_back(strs[0][0]);
 
         for(int j = 0; j < strs[0].size(); j++)
