@@ -4,6 +4,11 @@
 #         self.val = val
 #         self.next = next
 class Solution:
+    # create 2 pointers that point to beginning of list1 and list2. these will be used to iterate thru the lists
+    # then create 1 node and a pointer that also points to the beginning of this list which in the beginning is just the node
+    # loop thru list1 and list2 using curr1 and curr2 until one list ends and compare which one is smaller and make the result pointer/iterator.next point to the new node that is smaller
+    # once one list ends (gets to none), just add the other list that did not end yet set to the result pointer/iterator.next
+    # return result.next bc the first node was just a dummy one, we actually wanted the first one that gets set which is found with .next
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         curr1 = list1
         curr2 = list2
