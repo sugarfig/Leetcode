@@ -23,7 +23,7 @@ class Solution:
             mapString1[char1] = mapString1.get(char1, 0) + 1
             mapString2[char2] = mapString2.get(char2, 0) + 1
 
-        if len(mapString1) != len(mapString2):
-            return False
+        # if len(mapString1) != len(mapString2):
+        #     return False
         
         return mapString1 == mapString2
