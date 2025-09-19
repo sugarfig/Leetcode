@@ -7,7 +7,6 @@ class Solution:
         b = len(s) - 1
 
         while a < b:
-            print(b)
             tempChar = s[b]
             s[b] = s[a]
             s[a] = tempChar
