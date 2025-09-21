@@ -5,6 +5,7 @@ class Solution:
     # now we can check to see if there is a difference in they keys first in the maps and if no difference in keys then it will check the values to see if there could just be a duplicate of a letter added.
     # once it does this, it will return key and value of the difference with popitem()
     # then we can just return the key
+    # Sep 20th, 2025 #14
     def findTheDifference(self, s: str, t: str) -> str:
         differenceChar = ""
         hash1 = {}
