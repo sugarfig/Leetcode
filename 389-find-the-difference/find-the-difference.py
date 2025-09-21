@@ -1,5 +1,8 @@
 class Solution:
-
+    # check to see if t is empty. if it is, return nothing
+    # create 2 hashmaps. with the keys being the chars in the strings and the values being the amount of times that char appears in that string
+    # the 2nd string (string t) will always have one more char than the 1st string (string s) so once we are done looping thru both, we still have to assign the last char from string t to hash2
+    # now we can check to see if there is a 
     def findTheDifference(self, s: str, t: str) -> str:
         differenceChar = ""
         hash1 = {}
