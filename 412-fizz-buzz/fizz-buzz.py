@@ -1,4 +1,9 @@
 class Solution:
+    # loop through the range from 1 to n
+    # if the modulus of 3 and modulus of 5 with the value i is 0 then it is fizzBuzz. 
+    # If just modulus of 3, then Fizz.
+    # If just modulus of 5, then Buzz.
+    # otherwise append the i value but converting to a string 
     def fizzBuzz(self, n: int) -> List[str]:
         result = []
         for i in range(1, n + 1):
