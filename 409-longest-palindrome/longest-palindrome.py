@@ -17,15 +17,15 @@ class Solution:
             charMap[char] = charMap.get(char, 0) + 1
         
         for key, value in charMap.items():
-            # if value >= 2:
-            #    pairs = pairs + math.floor(value / 2)
-            if value % 2 == 0:
-                pairs = pairs + value
-            else:
-                pairs = pairs + (value - 1)
+            if value >= 2:
+               pairs = pairs + math.floor(value / 2)
+            # if value % 2 == 0:
+            #     pairs = pairs + value
+            # else:
+            #     pairs = pairs + (value - 1)
             
-        # result = pairs * 2
-        if pairs < len(s):
-            return int(pairs + 1)
+        result = pairs * 2
+        if result < len(s):
+            return int(result + 1)
 
-        return int(pairs)
+        return int(result)
