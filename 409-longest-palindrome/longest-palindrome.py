@@ -7,6 +7,7 @@ class Solution:
     # result will be the amount of pairs times 2
     # if the length of the string is less than the amount in result then add 1
     # return result
+    # September 23, 2025 #19
     def longestPalindrome(self, s: str) -> int:
         pairs = 0
         charMap = {}
