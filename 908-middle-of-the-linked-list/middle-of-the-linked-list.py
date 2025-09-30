@@ -13,9 +13,9 @@ class Solution:
         while walker != None:
             counter += 1
             walker = walker.next
-        print(counter)
+        # print(counter)
         middle = math.ceil(counter / 2)
-        print(middle)
+        # print(middle)
         newWalker = head
         for i in range(1, middle):
             newWalker = newWalker.next
