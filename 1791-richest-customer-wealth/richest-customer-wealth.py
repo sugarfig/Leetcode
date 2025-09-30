@@ -1,4 +1,9 @@
 class Solution:
+    # 2 for loops
+    # 1 to go over accounts and 1 to go over banks
+    # for every account sum amount in banks and add to an array
+    # then go thru array and take biggest
+    # dont actually need array. can just keep running total of largest wealth
     def maximumWealth(self, accounts: List[List[int]]) -> int:
         results = [0] * len(accounts)
         for i in range(len(accounts)):
