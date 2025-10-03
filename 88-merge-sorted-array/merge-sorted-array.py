@@ -1,4 +1,9 @@
 class Solution:
+    # have 2 variables keeping track of indicies of 1st and 2nd array
+    # loop while the 2nd array has not been iterated thru all the way
+    # if the length of array1 is less than the index1 and value in array2 is less than or equal to the value in array1 then insert that value and pop from array1 and increment both index1 and index2 and the current length of array1. currenlength is used to keep track of current indicies occupied of array1
+    # if index1 is less than the currentlength then add 1 to index1
+    # otherwise replace whatever is in the index2. increment length bc added to array1 and also increment to index2 bc already used taht index
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.
