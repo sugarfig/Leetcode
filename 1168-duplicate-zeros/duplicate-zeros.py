@@ -11,26 +11,36 @@ class Solution:
         """
         Do not return anything, modify arr in-place instead.
         """
-        count = 0
-        length = len(arr) - 1
-        for index in range(length + 1):
-            if index > length - count:
-                break
-            if arr[index] == 0:
-                if index == length - count:
-                    arr[length] = 0
-                    length -= 1
-                    break
-                count += 1
-        # print(count)
-        last = length - count
+        # count = 0
+        # length = len(arr) - 1
+        # for index in range(length + 1):
+        #     if index > length - count:
+        #         break
+        #     if arr[index] == 0:
+        #         if index == length - count:
+        #             arr[length] = 0
+        #             length -= 1
+        #             break
+        #         count += 1
+        # # print(count)
+        # last = length - count
         
-        for index in range(last, -1, -1):
-            # print(arr[index]) 
-            # print(count) 
-            if arr[index] == 0:
-                arr[index + count] = 0
-                count -= 1
-                arr[index + count] = 0
+        # for index in range(last, -1, -1):
+        #     # print(arr[index]) 
+        #     # print(count) 
+        #     if arr[index] == 0:
+        #         arr[index + count] = 0
+        #         count -= 1
+        #         arr[index + count] = 0
+        #     else:
+        #         arr[index + count] = arr[index]
+
+        n = len(arr)
+        i = 0
+        while i < n:
+            if arr[i] == 0:
+                arr.insert(i, 0)
+                i += 2
+                arr.pop()
             else:
-                arr[index + count] = arr[index]
+                i += 1
