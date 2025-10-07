@@ -16,6 +16,7 @@ class Solution:
                 # writer += 1
             reader += 1
         # print(writer)
-        emptySpaces = len(nums) - writer
-        for i in range(emptySpaces - 1):
-            nums.pop()
+        return writer + 1
+        # emptySpaces = len(nums) - writer
+        # for i in range(emptySpaces - 1):
+        #     nums.pop()
