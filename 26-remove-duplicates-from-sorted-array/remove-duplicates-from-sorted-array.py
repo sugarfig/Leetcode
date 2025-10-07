@@ -9,7 +9,7 @@ class Solution:
                 nums[writer] = nums[reader]
                 # writer += 1
             reader += 1
-        print(writer)
+        # print(writer)
         emptySpaces = len(nums) - writer
         for i in range(emptySpaces - 1):
             nums.pop()
