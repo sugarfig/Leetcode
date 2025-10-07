@@ -1,19 +1,15 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        dictionary = {}
-        # result = []
+        reader = 1
+        writer = 0
 
-        for num in nums:
-            # print(num)
-            dictionary[num] = 0;
-        
-        nums.clear()
-        for key in dictionary:
-            # return key
-            print(key)
-            nums.append(key)
-            # nums[:] = list(range(key + 1))
-
-        return len(nums)
-
-        
+        while reader < len(nums):
+            if nums[reader] != nums[writer]:
+                writer += 1
+                nums[writer] = nums[reader]
+                # writer += 1
+            reader += 1
+        print(writer)
+        emptySpaces = len(nums) - writer
+        for i in range(emptySpaces - 1):
+            nums.pop()
