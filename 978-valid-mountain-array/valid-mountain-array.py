@@ -1,7 +1,10 @@
 class Solution:
+    # check that array is at least 3 
+    # find the largestIndex. this will be the peak, but also check that it is not the first or last index. if it is, then return False
+    # set a boolean to false and begin to loop thru 
     def validMountainArray(self, arr: List[int]) -> bool:
         if len(arr) < 3:
-            return
+            return False
         # largest = arr[0]
         largestIndex = 0
         for i in range(1, len(arr)):
