@@ -1,7 +1,8 @@
 class Solution:
-    # check that array is at least 3 
+    # check that array is at least length of 3
     # find the largestIndex. this will be the peak, but also check that it is not the first or last index. if it is, then return False
-    # set a boolean to false and begin to loop thru 
+    # set a boolean to false and begin to loop thru arr from beginning up until largestIndex. if all values before largest array are smaller than each other bool var is true if any is not, then just return False
+    # now loop thru 2nd half of arr with beginning at the largestIndex + 1 to the end of the array and again check that the values are smaller than the one before and if one is not, then return false.
     def validMountainArray(self, arr: List[int]) -> bool:
         if len(arr) < 3:
             return False
