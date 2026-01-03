@@ -1,6 +1,6 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
-        # loop for shortest word
+        # loop for shortest word times 2 cause we are gonna alternate with the other word.
         # alternate and keep bool to track which word we are on.
         # once done with shortest word. append the rest of the other word to result string.
 
