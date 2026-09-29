@@ -15,7 +15,7 @@ class Solution:
 
         # return False
 
-        # faster:
+        # better memory:
         # sort then check if the current is the same as the next. if yes then return true.
 
         nums.sort()
